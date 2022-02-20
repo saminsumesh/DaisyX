@@ -26,9 +26,9 @@ async def give_cobtribs(c, m):
     g = github.Github()
     co = ""
     n = 0
-    repo = g.get_repo("TeamDaisyX/DaisyX")
+    repo = g.get_repo("SaminSumesh/TeamSakura")
     for i in repo.get_contributors():
         n += 1
         co += f"{n}. [{i.login}](https://github.com/{i.login})\n"
-    t = f"**DaisyX Contributors**\n\n{co}"
+    t = f"**TeamSakura Contributers**\n\n{co}"
     await m.reply(t, disable_web_page_preview=True)
